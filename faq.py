@@ -13,7 +13,11 @@ groq_client = Groq(
 
 
 faqs_path=Path(__file__).parent / "resources" / "faq_data.csv"
-chroma_client=chromadb.Client()
+chroma_client = chromadb.Client(
+    chromadb.config.Settings(
+        persist_directory="./chroma_db"
+    )
+)
 collection_name="faqs"
 
 
