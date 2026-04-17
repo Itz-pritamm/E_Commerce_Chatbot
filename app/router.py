@@ -18,21 +18,21 @@ faq = Route(
         "What if I want to return an item?",
         "Refund policy details",
         "How long does refund take?",
-        "When will I get my refund?",
+        "When will I get my refund?"
         
         # Order Tracking
         "How can I track my order?",
         "Track my order",
         "Where is my order?",
         "Check order status",
-        "Order tracking",
+        "Order tracking"
         
         # Payments
         "What payment methods are accepted?",
         "Payment options available",
         "Can I pay using credit card?",
         "Do you accept debit card?",
-        "did you accept the cash payment",
+        "did you accept the cash payment"
         
         # Offers / Discounts
         "Do I get discount with HDFC credit card?",
@@ -59,7 +59,7 @@ sql = Route(
         "What is the price of puma running shoes?",
         "Price of running shoes",
         "Show running shoes price"
-        "give me top 3 shoes in descending order of rating",
+        "give me top 3 shoes in descending order of rating"
     ]
 )
 router = SemanticRouter(
