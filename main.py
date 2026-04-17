@@ -6,7 +6,11 @@ from sql import sql_chain
 
 
 faqs_path=Path(__file__).parent / "resources" / "faq_data.csv"
-ingest_faq_data(faqs_path)
+@st.cache_resource
+def load_data():
+    ingest_faq_data(faqs_path)
+
+load_data()
 
 
 def ask(query):
