@@ -77,22 +77,24 @@ def run_query(query):
             df = pd.read_sql_query(query, conn)
             return df
 
-
 def data_comprehension(question, context):
+
+    # 🔥 LIMIT CONTEXT SIZE (CRITICAL FIX)
+    context = str(context)[:2000]
+
+    prompt = f"""
+    Answer the question based on the data.
+
+    Question: {question}
+    Data:
+    {context}
+    """
+
     chat_completion = client_sql.chat.completions.create(
         messages=[
-            {
-                "role": "system",
-                "content": comprehension_prompt,
-            },
-            {
-                "role": "user",
-                "content": f"QUESTION: {question}. DATA: {context}",
-            }
+            {"role": "user", "content": prompt}
         ],
         model=os.environ['GROQ_MODEL'],
-        temperature=0.2,
-        # max_tokens=1024
     )
 
     return chat_completion.choices[0].message.content
