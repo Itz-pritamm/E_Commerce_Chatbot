@@ -267,8 +267,12 @@ streamlit run app.py
 - Deployment on AWS/GCP/Azure
 
 
+# 📸 Demo
+
+screenshots: https://drive.google.com/file/d/1y5leobXrHQ4BkT085IexfoIT98HwRZ1R/view?usp=drivesdk
 
 
+```
 
 # 🤝 Contributing
 
