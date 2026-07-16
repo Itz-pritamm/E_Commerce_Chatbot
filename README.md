@@ -4,6 +4,7 @@ An intelligent **E-Commerce Customer Support Chatbot** built using **Retrieval-A
 
 The chatbot provides accurate answers to customer FAQs and retrieves product information through a hybrid AI architecture that combines vector search with structured database queries.
 
+Note: This chatbot is currently trained on and indexed with shoe product data only. As a result, it can accurately answer product-related queries exclusively about shoes. Queries related to other product categories are outside the scope of the current dataset.
 ---
 
 ## 🚀 Features
@@ -51,8 +52,8 @@ The chatbot provides accurate answers to customer FAQs and retrieves product inf
 Examples
 
 - What is your return policy?
-- Show me laptops under ₹60,000.
-- Which phone has the best camera?
+- Show me shoes under 5k.
+- Which shoes is rating is 5 star?
 - Can I cancel my order?
 
 ---
@@ -231,11 +232,11 @@ streamlit run app.py
 
 ### Product
 
-- Show me gaming laptops
-- Best phone under ₹30,000
-- Recommend wireless headphones
-- Which laptop has 16GB RAM?
-- Show products from Samsung
+- Show me sport shoes
+- Best shoes under ₹10000
+- Recommend shoes 
+  
+
 
 ---
 
@@ -265,20 +266,9 @@ streamlit run app.py
 - Product Recommendation using Hybrid Search
 - Deployment on AWS/GCP/Azure
 
----
 
-# 📸 Demo
 
-Add screenshots or a GIF of the application here.
 
-Example:
-
-```
-assets/homepage.png
-assets/chatbot_demo.gif
-```
-
----
 
 # 🤝 Contributing
 
@@ -298,7 +288,7 @@ Contributions are welcome!
 
 GitHub: https://github.com/Itz-pritamm
 
-LinkedIn: Add your LinkedIn profile here.
+LinkedIn: https://www.linkedin.com/in/pritam-gupta-704278326/
 
 ---
 
